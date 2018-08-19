@@ -2,7 +2,7 @@
 
 import datetime,time
 
-with open('a.txt', 'w+') as f:
+with open('a.txt', 'a+') as f:
     now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     f.write(now)
 
