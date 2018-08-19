@@ -3,10 +3,10 @@
 import datetime,time
 
 with open('a.txt', 'w+') as f:
-	now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-	f.write(now)
+    now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    f.write(now)
     print f.read()
-	
-print 1
+
+    print 1
 time.sleep(10)
 print 2
