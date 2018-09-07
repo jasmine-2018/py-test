@@ -12,3 +12,4 @@ with open('a.txt', 'r') as f:
 print 1
 time.sleep(10)
 print 2
+print 3
