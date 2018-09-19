@@ -18,7 +18,7 @@ install:
 script: 
     - ls -l
     - python test.py
-    - echo ${env-1}
-    - echo $env-2
+    - echo ${ENVO}
+    - echo $ENVT
     - echo $TRAVIS_BUILD_DIR
     - echo $TEST
