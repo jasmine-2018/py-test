@@ -13,5 +13,7 @@ print 1
 time.sleep(2)
 print 2
 
-print "ENVO is {}".format(os.getenv('ENVO', None))
-print "TRAVIS_BUILD_NUMBER is {}".format(os.getenv('TRAVIS_BUILD_NUMBER', None))
+envo = os.getenv('ENVO', None)
+print "ENVO is {}".format(envo)
+print "ENVO == test-11 : {}".format(envo == 'test-11')
+print "TRAVIS_BUILD_NUMBER is {}".formenvoat(os.getenv('TRAVIS_BUILD_NUMBER', None))
