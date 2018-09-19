@@ -15,3 +15,5 @@ install:
 script: 
     - ls -l
     - python test.py
+    - echo ${env-1}
+    - echo ${env-2}
