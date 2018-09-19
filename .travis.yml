@@ -7,6 +7,9 @@ branches:
   only:
   - master
   - py-test-b1
+
+env:
+  TEST: west
   
 # command to install dependencies
 install:
@@ -17,3 +20,5 @@ script:
     - python test.py
     - echo ${env-1}
     - echo ${env-2}
+    - echo $TRAVIS_BUILD_DIR
+    - echo $TEST
