@@ -15,10 +15,14 @@ env:
 install:
   - pip install requests
 # command to run tests
-script: 
+- stage: test-${TRAVIS_BUILD_ID}
+  script: 
     - ls -l
     - python test.py
     - echo ${ENVO}
     - echo $ENVT
     - echo $TRAVIS_BUILD_DIR
     - echo $TEST
+- stage: test-${ENVT}
+  script: 
+    - ls -l
