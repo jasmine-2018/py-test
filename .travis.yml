@@ -3,6 +3,7 @@ language: python
 branches:
   only:
   - master
+  - py-test-b1
 
 env:
   TEST: west
