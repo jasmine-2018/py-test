@@ -1,6 +1,6 @@
 # coding: utf8
 
-import datetime,time
+import datetime,time,os
 
 with open('a.txt', 'a+') as f:
     now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
