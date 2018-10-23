@@ -13,3 +13,6 @@ print 1
 time.sleep(10)
 print 2
 print 3
+
+print(os.environ.get("USER", "USER_MOCK"))
+print(os.environ.get("TRAVIS_BRANCH", "TRAVIS_BRANCH_MOCK"))
