@@ -1,10 +1,18 @@
 language: python
-python:
-  - "2.6"
-  - "2.7"
-# command to install dependencies
-install:
-  - pip install requests
-# command to run tests
-script: 
-    - python test.py
+
+env:
+  TEST: west
+  
+jobs:
+  include:
+    - stage: test-${TRAVIS_BUILD_ID}
+      script: 
+        - ls -l
+        - python test.py
+        - echo ${ENVO}
+        - echo $ENVT
+        - echo $TRAVIS_BUILD_DIR
+        - echo $TEST
+    - stage: test-${ENVT}
+      script: 
+        - ls -l
