@@ -24,7 +24,6 @@ jobs:
     displayName: 'Install dependencies'
 
 - job: 'Publish'
-  dependsOn: 'Test'
   pool:
     vmImage: 'Ubuntu 16.04'
 
