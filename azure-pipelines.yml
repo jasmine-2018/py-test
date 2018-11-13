@@ -22,13 +22,3 @@ jobs:
 
   - script: python -m pip install --upgrade pip && pip install -r requirements.txt
     displayName: 'Install dependencies'
-
-- job: 'Publish'
-  pool:
-    vmImage: 'Ubuntu 16.04'
-
-  steps:
-  - task: PythonScript@0
-    inputs:
-      targetType: 'inline'
-      script: print('Hello world 1')
