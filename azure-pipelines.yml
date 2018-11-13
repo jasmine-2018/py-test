@@ -39,6 +39,9 @@ jobs:
     inputs:
       versionSpec: '3.x'
       architecture: 'x64'
+      targetType: 'inline'
 
-  - script: python setup.py sdist
+  - script: |
+      print('Hello world 1')
+      print('Hello world 2')
     displayName: 'Build sdist'
